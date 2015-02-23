@@ -1,0 +1,43 @@
+" Colors
+colorscheme tomorrow-night
+
+let mapleader = ","
+
+set clipboard=unnamed
+set timeoutlen=250
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+map <Leader>d orequire 'pry'<cr>binding.pry<esc>:w<cr>
+nmap <Leader>a :Ag<space>
+
+" Edit another file in the same directory as the current file
+" " uses expression to extract path from current file's path
+map <Leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
+map <Leader>s :split <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
+map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
+
+" Clean search
+map // :nohlsearch<CR>
+map <Leader>R :call RunCurrentSpecFile()<CR>
+map <Leader>r :call RunNearestSpec()<CR>
+map <Leader>rr :call RunLastSpec()<CR>
+
+" easier redo
+noremap U <C-r>
+
+" Status bar
+set laststatus=2
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_rvm')?rvm#statusline():''}%{fugitive#statusline()}%=%-16(\ %l,%c-%v\ %)%P
+
+" Unimpaired configuration
+" Bubble single lines
+nmap <C-K> [e
+nmap <C-J> ]e
+" Bubble multiple lines
+vmap <C-K> [egv
+vmap <C-J> ]egv

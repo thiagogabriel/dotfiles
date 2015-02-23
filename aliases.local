@@ -1,0 +1,19 @@
+# Ruby
+alias be='bundle exec'
+alias bes='bundle exec spring'
+
+# Git
+alias ga='git add'
+alias gst='git status'
+alias gd='git diff'
+alias gup='git pull --rebase'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit -v'
+alias gc!='git commit -v --amend'
+alias gca='git commit -v -a'
+alias gca!='git commit -v -a --amend'
+alias gcmsg='git commit -m'
+alias gco='git checkout'
+alias glo='git log --oneline --decorate --color'
+alias glog='git log --oneline --decorate --color --graph'

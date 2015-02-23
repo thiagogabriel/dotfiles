@@ -1,0 +1,12 @@
+[user]
+  name = Thiago Borges
+  email = borges@helabs.com.br
+
+[github]
+  user = thiagogabriel
+
+[merge]
+  ff = false
+
+[rerere]
+  enabled = true
