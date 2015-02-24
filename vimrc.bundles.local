@@ -1,1 +1,4 @@
 Plugin 'jlangston/tomorrow-night-vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'rking/ag.vim'
