@@ -1,6 +1,7 @@
 # Ruby
 alias be='bundle exec'
 alias bes='bundle exec spring'
+alias int='bundle exec rake integrate'
 
 # Git
 alias ga='git add'
