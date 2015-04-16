@@ -41,3 +41,6 @@ nmap <C-J> ]e
 " Bubble multiple lines
 vmap <C-K> [egv
 vmap <C-J> ]egv
+
+" strip trailing whitespace
+nnoremap <silent> <leader><space> mm:%s/\s\+$//e<CR>`m
