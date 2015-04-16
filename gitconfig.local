@@ -6,7 +6,7 @@
   user = thiagogabriel
 
 [merge]
-  ff = false
+  ff = yes
 
 [rerere]
   enabled = true
