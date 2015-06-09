@@ -12,7 +12,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-map <Leader>d orequire 'pry'<cr>binding.pry<esc>:w<cr>
+map <Leader>d obinding.pry<esc>:w<cr>
 nmap <Leader>a :Ag<space>
 
 " Edit another file in the same directory as the current file
