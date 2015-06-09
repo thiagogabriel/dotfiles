@@ -18,3 +18,6 @@ alias gcmsg='git commit -m'
 alias gco='git checkout'
 alias glo='git log --oneline --decorate --color'
 alias glog='git log --oneline --decorate --color --graph'
+
+alias hbk='heroku pg:backups capture -a'
+alias hbku='heroku pg:backups public-url'
