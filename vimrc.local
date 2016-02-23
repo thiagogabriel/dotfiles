@@ -44,3 +44,6 @@ vmap <C-J> ]egv
 
 " strip trailing whitespace
 nnoremap <silent> <leader><space> mm:%s/\s\+$//e<CR>`m
+
+" Elixir
+nmap <Leader>m :Mix test<CR>
