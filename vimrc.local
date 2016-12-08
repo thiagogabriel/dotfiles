@@ -2,9 +2,11 @@
 colorscheme tomorrow-night
 
 let mapleader = ","
-
 set clipboard=unnamed
 set timeoutlen=250
+
+" Insert spaces when TAB is pressed.
+set expandtab
 
 " Searching
 set hlsearch
@@ -47,3 +49,9 @@ nnoremap <silent> <leader><space> mm:%s/\s\+$//e<CR>`m
 
 " Elixir
 nmap <Leader>m :Mix test<CR>
+
+" Dash
+:nmap <silent> <leader>f <Plug>DashSearch
+
+" Rubocop
+nmap <Leader>l :RuboCop -R<CR>
