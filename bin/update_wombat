@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Update wombat dashboard admin without having to create a new release
+
+wlinkpriv() {
+    DASHBOARD_DIR=$(ls -d rel/wombat/wombat/lib/wo_dashboard*);
+    if [[ "$DASHBOARD_DIR" != "" ]]; then
+        echo "rm -rf $DASHBOARD_DIR/priv";
+        rm -rf $DASHBOARD_DIR/priv;
+        echo "ln -s $(pwd)/apps/wo_dashboard/priv/ $DASHBOARD_DIR/priv";
+        ln -s $(pwd)/apps/wo_dashboard/priv/ $DASHBOARD_DIR/priv;
+    fi
+}
+
+wlinkpriv

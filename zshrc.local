@@ -1,1 +1,18 @@
 source ~/.zshenv
+
+# Erlang version manager stuff
+export KERL_CONFIGURE_OPTIONS="--disable-hipe --enable-smp-support --enable-threads --enable-kernel-poll --enable-darwin-64bit --with-odbc=/usr/local/Cellar/unixodbc/2.3.2_1 --with-ssl=/usr/local/Cellar/openssl/1.0.2h_1"
+export KERL_DEFAULT_INSTALL_DIR=$HOME/.kerl/installations/
+
+# Start docker machine and set up env in terminal
+alias dstart='docker-machine start default; eval "$(docker-machine env default)"'
+
+# Run processes like rails server, postgres, sidekiq
+alias dup='docker-compose up'
+
+# Stop docker machine to free ram when not using docker
+alias dstop='docker-machine stop default'
+
+# Delete docker images and containers
+alias dclean='docker images -q --filter "dangling=true" | xargs docker rmi'
+alias dreset='docker rm -f $(docker ps -qa);  docker rmi -f $(docker images -qa)'

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "fileutils"
+
+FileUtils.cp ".git/nodocker/database.yml", "config/database.yml"
+FileUtils.cp ".git/nodocker/sidekiq.rb", "config/initializers/sidekiq.rb"
