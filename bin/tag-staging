@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'date'
+
+`git fetch --tags`
+`git tag -f staging`
+`git tag -f staging@#{Date.today}`
+`git push -f --tags`
+
+puts '/jenkins deploy server staging'

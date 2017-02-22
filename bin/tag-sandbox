@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+`git tag -f sandbox`
+`git push -f origin sandbox`
+
+puts '/jenkins deploy server sandbox'
