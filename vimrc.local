@@ -47,6 +47,9 @@ vmap <C-J> ]egv
 " strip trailing whitespace
 nnoremap <silent> <leader><space> mm:%s/\s\+$//e<CR>`m
 
+set nowrap           " do not automatically wrap on load
+set formatoptions-=t " do not automatically wrap text when typing
+
 " Elixir
 nmap <Leader>m :Mix test<CR>
 
