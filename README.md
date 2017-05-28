@@ -1,4 +1,4 @@
-This dotfile is an extension of [thoughtbot's dotfile](https://raw.githubusercontent.com/thoughtbot/dotfiles/)
+This dotfile is an extension of [thoughtbot's dotfile](https://github.com/thoughtbot/dotfiles)
 
 In order to work properly, you need to install thoughtbot's dotfile following
 the steps: https://github.com/thoughtbot/dotfiles#install
