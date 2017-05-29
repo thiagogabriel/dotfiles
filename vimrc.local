@@ -25,9 +25,10 @@ map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 
 " Clean search
 map // :nohlsearch<CR>
-map <Leader>R :call RunCurrentSpecFile()<CR>
-map <Leader>r :call RunNearestSpec()<CR>
-map <Leader>rr :call RunLastSpec()<CR>
+nnoremap <silent> <Leader>R :TestFile<CR>
+nnoremap <silent> <Leader>r :TestNearest<CR>
+nnoremap <silent> <Leader>rr :TestLast<CR>
+nnoremap <silent> <Leader>A :TestSuite<CR>
 
 " easier redo
 noremap U <C-r>
