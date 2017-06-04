@@ -1,4 +1,4 @@
-Plug 'jlangston/tomorrow-night-vim'
+Plug 'dracula/vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'rking/ag.vim'

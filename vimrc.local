@@ -1,5 +1,5 @@
 " Colors
-colorscheme tomorrow-night
+color dracula
 
 let mapleader = ","
 set clipboard=unnamed
@@ -24,7 +24,7 @@ map <Leader>s :split <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 
 " Clean search
-map // :nohlsearch<CR>
+map <Leader>/ :nohlsearch<CR>
 nnoremap <silent> <Leader>R :TestFile<CR>
 nnoremap <silent> <Leader>r :TestNearest<CR>
 nnoremap <silent> <Leader>rr :TestLast<CR>
