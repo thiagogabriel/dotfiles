@@ -3,4 +3,4 @@
 `git tag -f sandbox`
 `git push -f origin sandbox`
 
-puts '/jenkins deploy server sandbox'
+puts "Ready! Don't forget to deploy to Sandbox on Jenkins"

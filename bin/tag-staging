@@ -6,4 +6,4 @@ require 'date'
 `git tag -f staging@#{Date.today}`
 `git push -f --tags`
 
-puts '/jenkins deploy server staging'
+puts "Ready! Don't forget to deploy to Staging on Jenkins"
