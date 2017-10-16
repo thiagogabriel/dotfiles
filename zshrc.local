@@ -1,4 +1,5 @@
 source ~/.zshenv
+source $HOME/.asdf/asdf.sh
 
 # Erlang version manager stuff
 export KERL_CONFIGURE_OPTIONS="--disable-hipe --enable-smp-support --enable-threads --enable-kernel-poll --enable-darwin-64bit --with-odbc=/usr/local/Cellar/unixodbc/2.3.2_1 --with-ssl=/usr/local/Cellar/openssl/1.0.2h_1"
@@ -16,3 +17,5 @@ alias dstop='docker-machine stop default'
 # Delete docker images and containers
 alias dclean='docker images -q --filter "dangling=true" | xargs docker rmi'
 alias dreset='docker rm -f $(docker ps -qa);  docker rmi -f $(docker images -qa)'
+
+export PATH="$HOME/.bin:$PATH"
