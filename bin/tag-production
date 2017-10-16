@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'date'
+
+`git fetch --tags`
+`git tag -f production`
+`git tag -f production@#{Date.today}`
+`git push -f --tags`
+
+puts "Ready! Don't forget to deploy to Production on Jenkins"
