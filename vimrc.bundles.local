@@ -8,7 +8,6 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mattreduce/vim-mix'
 Plug 'rizzatti/dash.vim'
 Plug 'ngmy/vim-rubocop'
-Plug 'w0rp/ale'
 
 UnPlug 'fatih/vim-go'
 UnPlug 'kchmck/vim-coffee-script'
