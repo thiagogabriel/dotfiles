@@ -1,8 +1,10 @@
 # Ruby
+alias befs='bundle exec foreman start'
+alias fs='foreman start'
 alias be='bundle exec'
 alias bes='bundle exec spring'
 alias int='bundle exec rake integrate'
-alias sp='bundle exec rake parallel:spec'  # sp: spec parallel
+alias sp='RAILS_ENV=test bundle exec rake parallel:spec["spec\/(?!features)"]'  # sp: spec parallel
 alias spp='bundle exec rake parallel:prepare'  # spp: spec parallel prepare
 
 # Git

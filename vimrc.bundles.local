@@ -1,4 +1,4 @@
-Plug 'dracula/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'rking/ag.vim'
@@ -8,6 +8,13 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mattreduce/vim-mix'
 Plug 'rizzatti/dash.vim'
 Plug 'ngmy/vim-rubocop'
+Plug 'posva/vim-vue'
+Plug 'aliou/sql-heredoc.vim'
+
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 UnPlug 'fatih/vim-go'
 UnPlug 'kchmck/vim-coffee-script'

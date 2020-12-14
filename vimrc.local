@@ -1,9 +1,12 @@
+:scriptencoding utf-8
+
 " Colors
 color dracula
 
 let mapleader = ","
 set clipboard=unnamed
 set timeoutlen=250
+set textwidth=100
 
 " Insert spaces when TAB is pressed.
 set expandtab
