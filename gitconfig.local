@@ -10,3 +10,6 @@
 
 [rerere]
   enabled = true
+
+[alias]
+  sl = shortlog --format='- %s' -w0,1,4
