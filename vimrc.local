@@ -4,7 +4,8 @@
 color dracula
 
 let mapleader = ","
-set clipboard=unnamed
+
+set clipboard=unnamedplus
 set timeoutlen=250
 set textwidth=120
 
@@ -62,3 +63,12 @@ nmap <Leader>m :Mix test<CR>
 
 " Rubocop
 nmap <Leader>l :RuboCop -R<CR>
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
