@@ -10,6 +10,8 @@ Plug 'rizzatti/dash.vim'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
 Plug 'aliou/sql-heredoc.vim'
+Plug 'github/copilot.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
