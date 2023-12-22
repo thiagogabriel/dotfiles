@@ -1,5 +1,6 @@
 unbind C-b
 set -g prefix C-a
+bind-key C-a send-prefix
 
 # Makes ESC work without delay on Neovim
 set -g escape-time 20
