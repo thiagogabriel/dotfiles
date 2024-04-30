@@ -4,14 +4,19 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'rking/ag.vim'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'elixir-lang/vim-elixir'
-Plug 'mattreduce/vim-mix'
-Plug 'rizzatti/dash.vim'
+" Plug 'elixir-lang/vim-elixir'
+" Plug 'mattreduce/vim-mix'
+" Plug 'rizzatti/dash.vim'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
 Plug 'aliou/sql-heredoc.vim'
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'digitaltoad/vim-pug'
+" Telescope
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {

@@ -1,33 +1,26 @@
 source ~/.zshenv
-source $HOME/.asdf/asdf.sh
+# source $HOME/.asdf/asdf.sh
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
-# Hardcoding paths because brew takes a few seconds to find the path
-# brew --prefix openssl
-OPENSSL_PATH="/usr/local/opt/openssl@1.1"
-
-# brew --prefix postgresql@11
-POSTGRES11_PATH="/usr/local/opt/postgresql@11"
-
-# Start docker machine and set up env in terminal
-alias dstart='docker-machine start default; eval "$(docker-machine env default)"'
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # Run processes like rails server, postgres, sidekiq
 alias dup='docker-compose up'
 
-# Stop docker machine to free ram when not using docker
-alias dstop='docker-machine stop default'
-
 # Delete docker images and containers
 alias dclean='docker images -q --filter "dangling=true" | xargs docker rmi'
 alias dreset='docker rm -f $(docker ps -qa);  docker rmi -f $(docker images -qa)'
-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --enable-wx --with-ssl=$OPENSSL_PATH"
 
 export PATH="$HOME/.bin:$PATH"
 
+# Hubstaff
+export DISABLE_SIMPLECOV=1
+export OPENSSL_CONF=/etc/ssl
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
-PATH="$OPENSSL_PATH/bin:$PATH"
-PATH="$POSTGRES11_PATH/bin:$PATH"
 
 export LC_COLLATE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"

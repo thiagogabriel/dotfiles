@@ -1,3 +1,6 @@
+alias mux='tmuxinator'
+alias muxs='tmuxinator start'
+
 # Ruby
 alias befs='bundle exec foreman start'
 alias fs='foreman start'

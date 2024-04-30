@@ -18,8 +18,10 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Disable mouse interaction. It messes with text selection in tmux.
+set mouse=""
+
 map <Leader>d obinding.pry<esc>:w<cr>
-nmap <Leader>a :Ag<space>
 
 " Edit another file in the same directory as the current file
 " " uses expression to extract path from current file's path
@@ -33,6 +35,23 @@ nnoremap <silent> <Leader>R :TestFile<CR>
 nnoremap <silent> <Leader>r :TestNearest<CR>
 nnoremap <silent> <Leader>rr :TestLast<CR>
 nnoremap <silent> <Leader>A :TestSuite<CR>
+
+if has('nvim')
+  " Find files using Telescope command-line sugar.
+  nnoremap <leader>ff <cmd>Telescope find_files<cr>
+  nnoremap <C-p> <cmd>Telescope find_files<cr>
+  nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+  nnoremap <leader>a <cmd>Telescope live_grep<cr>
+  nnoremap <leader>fb <cmd>Telescope buffers<cr>
+  nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+else
+  nmap <Leader>a :Ag<space>
+endif
+
+" nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCompactSexyComs = 1
 
 " easier redo
 noremap U <C-r>
