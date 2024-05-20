@@ -1,6 +1,6 @@
 source ~/.zshenv
-# source $HOME/.asdf/asdf.sh
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+eval "$(rbenv init - zsh)"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
