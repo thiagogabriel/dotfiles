@@ -1,0 +1,22 @@
+# /home/borges/.config/tmuxinator/hs.yml
+
+name: hs
+root: ~/Projects/hs/server
+
+windows:
+  - vim: nvim .
+  - zsh: # zsh
+  - server: rails s
+  - puma-dev:
+      layout: main-vertical
+      panes:
+        - puma-dev -sysbind
+        - overmind s -f Procfile.local -l vite,sidekiq
+  - account:
+      root: ~/Projects/hs/account
+      layout: main-vertical
+      panes:
+        - # zsh
+        - overmind s -f Procfile -l sidekiq
+  - tasks:
+      root: ~/Projects/hs/tasks

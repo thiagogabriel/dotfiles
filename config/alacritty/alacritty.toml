@@ -1,0 +1,44 @@
+import = ['/home/borges/.config/alacritty/dracula/dracula.toml']
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MesloLGS NF"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "Return"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001B[94;5u"
+key = "Key6"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;2u"
+key = "Return"
+mods = "Shift"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;5u"
+key = "Return"
+mods = "Control"
+
+# [shell]
+# args = ["--cd ~/Projects/hs"]
+# program = 'C:\Windows\System32\wsl.exe'
+
+[window.dimensions]
+columns = 205
+lines = 55
+
+[window.position]
+x = 200
+y = 50
+
+# [window]
+# decorations = 'none'
+# padding.x = 0
+# padding.y = 0

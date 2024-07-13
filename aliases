@@ -1,5 +1,30 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Bundler
+alias b="bundle"
+
+# Rails
+alias migrate="bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare"
+alias s="rspec"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Easier navigation: ..., ...., ....., and -
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
 alias mux='tmuxinator'
 alias muxs='tmuxinator start'
+
+alias notes='nvim -c "set nonumber" -c "set wrap" ~/Dropbox/TODO.txt'
 
 # Ruby
 alias befs='bundle exec foreman start'
