@@ -10,6 +10,7 @@ vim.cmd('let &packpath=&runtimepath')
 vim.cmd('source ~/.vimrc')
 
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "typescript", "javascript", "json", "html", "css", "scss", "bash", "dockerfile", "lua", "pug", "ruby", "toml", "tsx", "vue", "yaml" },
   highlight = {
     enable = true,
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
@@ -19,7 +20,7 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
   matchup = {
-    enable = true,
+    enable = false,
   },
   endwise = {
     enable = true,

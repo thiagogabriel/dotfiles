@@ -1,0 +1,13 @@
+{
+  "eslint.packageManager": "pnpm",
+  "eslint.alwaysShowStatus": true,
+  "languageserver": {
+    "rubocop": {
+      "command": "bundle",
+      "args" : ["exec", "rubocop", "--lsp"],
+      "filetypes": ["ruby"],
+      "rootPatterns": [".git", "Gemfile"],
+      "requireRootPattern": true
+    },
+  },
+}

@@ -51,5 +51,5 @@ windows:
   - sidekiq:
       layout: main-vertical
       panes:
-        - sidekiq
+        - be sidekiq
         - bin/webpack-dev-server

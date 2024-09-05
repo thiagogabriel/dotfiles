@@ -65,7 +65,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'digitaltoad/vim-pug'
 " Telescope
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'andymass/vim-matchup'
+" Plug 'andymass/vim-matchup' "Slow on large files
 Plug 'windwp/nvim-autopairs'
 Plug 'RRethy/nvim-treesitter-endwise'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
@@ -78,8 +78,8 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 
-if g:has_async
-  Plug 'dense-analysis/ale'
-endif
+" if g:has_async
+"   Plug 'dense-analysis/ale'
+" endif
 
 call plug#end()

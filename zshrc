@@ -34,9 +34,9 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Local config
 source ~/.zshenv
@@ -56,9 +56,9 @@ alias bat='batcat'
 eval "$(zoxide init bash)"
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 export PATH="$HOME/.bin:$PATH"
 
@@ -70,6 +70,9 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export DISABLE_SIMPLECOV=1
 export OPENSSL_CONF=/etc/ssl
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export VITE_RUBY_HOST=localhost
+
+export BROWSER=wslview
 
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
